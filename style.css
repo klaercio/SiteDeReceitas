@@ -70,18 +70,17 @@ body {
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
-    border: 2px solid;
-    border-image: conic-gradient(red, aqua, magenta, red) 1;
-   /*  padding: 0 0.5rem; */
+    border: 1px solid rgba(99, 33, 199, 0.8);
     margin : 0 1rem 1rem 1rem;
     text-align: center;
     width: 30%;
     height: 300px;
     flex-shrink: 0;
+    border-radius: 10px;
 }
 
 .receita__imagem {
-    width: 100px;
+    width: 80%;
     height: 100px;
     flex-grow: 2;
 }
@@ -156,8 +155,19 @@ body {
         border-top: none;
         width: 100vw;
         text-align: center;
-        border-image: conic-gradient(red, aqua, magenta, red) 1;
     }
+
+    .conteudo {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .conteudo__lista-itens {
+        margin-bottom: 2rem;
+        box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
+        border: none;
+        border-radius: 10px;
+      }
 }
 
 

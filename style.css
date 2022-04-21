@@ -140,6 +140,24 @@ body {
     .conteudo__lista-itens {
         width: 100%;
     }
+
+    .lista__navegacao {
+        flex-direction: column;
+    }
+
+    .lista__navegacao li {
+        margin: 0;
+        padding: 0.5rem 0;
+        border-bottom: #6600F9;
+        border-width: 2px;
+        border-style: solid;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        width: 100vw;
+        text-align: center;
+        border-image: conic-gradient(red, aqua, magenta, red) 1;
+    }
 }
 
 

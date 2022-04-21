@@ -39,6 +39,21 @@ body {
     color: #9900ff;
 }
 
+.inicio {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.inicio__imagem {
+    width: 100%;
+}
+
+.inicio__p {
+    font-size: 3rem;
+    font-family: cursive;
+    color: #720bfa;
+}
+
 .conteudo {
     margin-top: 5rem;
 }
@@ -51,8 +66,7 @@ body {
 .conteudo__lista-itens {
     display: flex;
     flex-direction: column;
-    justify-content: space-between
-    ;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
@@ -61,8 +75,9 @@ body {
    /*  padding: 0 0.5rem; */
     margin : 0 1rem 1rem 1rem;
     text-align: center;
-    width: calc(33.1% - 2rem);
+    width: 30%;
     height: 300px;
+    flex-shrink: 0;
 }
 
 .receita__imagem {
@@ -96,10 +111,35 @@ body {
 }
 
 .imagem__copyright {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-right: 1rem;
 }
 
+
+@media (max-width: 1370px) {
+    .conteudo__lista-itens {
+        width: 45%;
+    }
+}
+
+@media (max-width: 970px) {
+    .logo{
+        display: none;
+    }
+
+    .navegacao {
+        justify-content: space-around;
+        justify-content: center;
+    }
+
+    .navegacao:nth-child(1) {
+       margin-left: 3rem;
+    }
+
+    .conteudo__lista-itens {
+        width: 100%;
+    }
+}
 
 
